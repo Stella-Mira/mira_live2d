@@ -1,0 +1,46 @@
+{
+  "name": "mira_live2d",
+  "version": "3.0.0",
+  "description": "DSH Live2D 看板娘插件：默认隐藏 + 常驻开关、模型/表情/动作/背景菜单、20 个 JSON 工具（状态/显隐/切模型/资源缺失诊断/背景/截图）、OpenAI 与阿里云 TTS（600 凭据）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "model/README.md",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "live2d",
+    "mascot",
+    "tts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stella-Mira/mira_live2d.git"
+  }
+}

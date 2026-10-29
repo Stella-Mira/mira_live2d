@@ -1,0 +1,8 @@
+# mira_live2d -- DSH Live2D 看板娘插件（bundle patch）
+#
+# 这里只是「装上就能用」的最小装配：条目 id/name 必须与包名一致。
+# 真正的配置在 $DSH_HOME/mira_config/mira_live2d/config.json（设置页写入后以它为准），
+# TTS 凭据只在 $DSH_HOME/mira_config/mira_live2d/creds/tts.json（600），永不写在这里。
+- insert:
+    - id: mira_live2d
+      name: mira_live2d
